@@ -10,9 +10,9 @@ db.init_app(app)
 
 @app.route("/")
 def home():
-    return "Практична робота 3 — SQLAlchemy One-to-Many"
+    return "One-to-Many SQLAlchemy demo"
 
 if __name__ == "__main__":
     with app.app_context():
-        db.create_all()  # Створюємо таблиці при запуску
+        db.create_all()
     app.run(debug=True)
